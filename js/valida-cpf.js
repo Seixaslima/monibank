@@ -5,9 +5,7 @@ export default function ehUmCPF(campo) {
     verificaPrimeiroDigito(cpf) ||
     verificaSegundoDigito(cpf)
   ) {
-    console.log('Esse CPF não é valido');
-  } else {
-    console.log('Esse CPF é valido');
+    campo.setCustomValidity('CPF Invalido');
   }
 }
 
